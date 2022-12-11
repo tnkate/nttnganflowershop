@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>White Blossoms</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<!----- Jquery JS----->
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+
+	<div id="header">
+		<div>
+			<div class="logo">
+				<a href="index.html">White Blossoms</a>
+			</div>
+			<ul id="navigation">
+				<li class="active">
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="shop.html">Shop</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="adbox">
+		<div class="hp_pic">
+			<img src="images/wb_hppic.jpg" alt="Img">
+		</div>
+		<div class="hp_text">
+			<h1>Tulips.</h1>
+			<div class="sub_head">
+				<p>
+					Tulips are one of the most admired, beautiful, and popular bulbous plants that flower in the spring season.
+				</p>
+				<button class="btn">
+					<a href="shop.html"> Look at the store </a> 
+				</button>
+			</div>	
+		</div>
+	</div>
+	<div id="contents">
+		<p>
+			We acknowledge that our experiences are the result of our senses collaborating to create our own realities. We experiment with nature and form in order to create novel and exciting sensory experiences.
+		</p>
+	</div>	
+	<div id="contents-pic">
+		<div class="pic-1">
+			<img src="images/cp-1.jpg">
+		</div>
+		<div class="pic-2">
+			<img src="images/cp-2.jpg">
+		</div>
+	</div>
+	<div id="hp-about">
+		<div class="hp-about-head">
+			<h1>About Us</h1>
+		</div>
+		<div class="hp-about-text">
+			<p>White Blossoms is a poem-inspired flower design story. White Blossoms is a refined art and cinematography enthusiast. a well-traveled, outspoken florist who regards flowers as a form of transitory art.</p>
+		</div>
+		<button class="btn2">
+			<a href="about.html"> Explore More </a> 
+		</button>
+	</div>
+	<div id="footer">
+			<div id="connect">
+				<a href="" target="_blank" class="facebook"></a><a href="" target="_blank" class="googleplus"></a><a href="" target="_blank" class="twitter"></a><a href="" target="_blank" class="tumbler"></a>
+			</div>
+			<p>
+				© 2023 White Blossoms.| 19229094 Nguyen Ngan | All Rights Reserved.
+			</p>
+	</div>
+	<!----JavaScript-->
+	<script>
+		$(function () {
+            $(document).scroll(function () {
+                var $nav = $("#header");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+	</script>
+</body>
+</html>

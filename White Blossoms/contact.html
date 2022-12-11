@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Contact - White Blossoms</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<!----- Jquery JS----->
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<div id="header">
+		<div>
+			<div class="logo">
+				<a href="index.html">White Blossoms</a>
+			</div>
+			<ul id="navigation">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="shop.html">Shop</a>
+				</li>
+				<li class="active">
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="shopbox">
+		<div class="shop_pic">
+			<img src="images/contact-pic1.jpg" alt="Img">
+		</div>
+		<div class="shop_text">
+			<h1>Contact</h1>
+		</div>
+	</div>
+	<div id="contact-contents">
+		<div class="section">
+			<h1>Contact</h1>
+			<p>
+				Kindly inform us about your event's style or bouquet style, as well as your favorite flower and its details. If you are inquiring about a wedding, kindly demonstrate us the desired design*.
+			</p>
+			<form action="index.html" method="post" class="message">
+				<input type="text" value="Name" onFocus="this.select();" onMouseOut="javascript:return false;"/>
+				<input type="text" value="Email" onFocus="this.select();" onMouseOut="javascript:return false;"/>
+				<input type="text" value="Subject" onFocus="this.select();" onMouseOut="javascript:return false;"/>
+				<textarea></textarea>
+				<input type="submit" value="Send"/>
+			</form>
+		</div>
+		<div class="section contact">
+			<p>
+				For Inquiries Please Call: <span>+84-3227-3227</span>
+			</p>
+			<p>
+				Or you can visit us at: <span>White Blossoms<br> Somewhere in Vietnam :)</span>
+			</p>
+		</div>
+	</div>
+	<div id="others-footer">
+		<div id="connect">
+			<a href="" target="_blank" class="facebook"></a><a href="" target="_blank" class="googleplus"></a><a href="" target="_blank" class="twitter"></a><a href="" target="_blank" class="tumbler"></a>
+		</div>
+		<p>
+			© 2023 White Blossoms.| 19229094 Nguyen Ngan | All Rights Reserved.
+		</p>
+	</div>
+<!----JavaScript-->
+	<script>
+		$(function () {
+			$(document).scroll(function () {
+				var $nav = $("#header");
+				$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+			});
+		});
+	</script>
+</body>
+</html>

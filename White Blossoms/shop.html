@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Shop - White Blossoms</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<!----- Jquery JS----->
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<div id="header">
+		<div>
+			<div class="logo">
+				<a href="index.html">White Blossoms</a>
+			</div>
+			<ul id="navigation">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li class="active">
+					<a href="shop.html">Shop</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="shopbox">
+		<div class="shop_pic">
+			<img src="images/shop-pic1.jpg" alt="Img">
+		</div>
+		<div class="shop_text">
+			<h1>Shop & Services</h1>
+		</div>
+	</div>
+	<div id="shop-contents-pic-1">
+		<div class="shop-pic-1">
+			<img src="images/shop-pic2.jpg">
+		</div>
+		<div class="shop-contents-text">
+			<h1>1.</h1>
+			<h2>Bouquet</h2>
+			<p>Customization based on your preferences and meaning delivery.</p>
+			<button class="shop-btn1">
+				<a href=""> Click here! </a> 
+			</button>
+		</div>
+	</div>
+	<div id="shop-contents-pic-2">
+		<div class="shop-pic-2">
+			<img src="images/shop-pic3.jpg">
+		</div>
+		<div class="shop-contents-text">
+			<h1>2.</h1>
+			<h2>Event Decoration</h2>
+			<p>Inspiration comes from event main theme (weddings,anniversary,...).</p>
+			<button class="shop-btn2">
+				<a href=""> Click here! </a> 
+			</button>
+		</div>
+	</div>
+	<div id="others-footer">
+		<div id="connect">
+			<a href="" target="_blank" class="facebook"></a><a href="" target="_blank" class="googleplus"></a><a href="" target="_blank" class="twitter"></a><a href="" target="_blank" class="tumbler"></a>
+		</div>
+		<p>
+			© 2023 White Blossoms.| 19229094 Nguyen Ngan | All Rights Reserved.
+		</p>
+	</div>
+<!----JavaScript-->
+	<script>
+		$(function () {
+			$(document).scroll(function () {
+				var $nav = $("#header");
+				$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+			});
+		});
+	</script>
+</body>
+</html>
